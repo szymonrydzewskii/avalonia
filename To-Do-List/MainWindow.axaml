@@ -5,5 +5,9 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="To_Do_List.MainWindow"
         Title="To_Do_List">
-    Welcome to Avalonia!
+    <StackPanel Margin="10">
+        <TextBlock Text="Wpisz nowe zadanie"></TextBlock>
+        <TextBox x:Name="noweZadanie_textbox"/>
+        <Button Content="Dodaj zadanie" Margin="0,5,0,0" Click="DodajZadanie_click"/>
+    </StackPanel>
 </Window>
